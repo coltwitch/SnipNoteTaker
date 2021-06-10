@@ -1,7 +1,0 @@
-I think this is the github https://github.com/JeremyLikness/BlazorWasmEFCoreExample
-Oh man, that was close
-https://github.com/JeremyLikness/EFCoreModernDataAccess
-https://github.com/JeremyLikness/PlanetaryDocs
-https://blog.jeremylikness.com
-@JeremyLikness
-https://strengthwithparkinsons.com

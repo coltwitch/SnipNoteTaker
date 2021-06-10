@@ -1,8 +1,0 @@
-Docker for Windows Container Development
-Rob Richardson
---------------------------------------------------------------
-AS base at the top allows you to debug from visual studio
-Docker override yml allows you to bring in secrets from outside the containter easily
-Set the "Docker Compose" project as your startup project in order to debug inside the container
-https://robrich.org/presentations
-https://github.com/robrich/docker-in-windows-containers
