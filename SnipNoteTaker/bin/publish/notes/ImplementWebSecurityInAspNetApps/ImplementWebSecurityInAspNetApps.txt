@@ -1,0 +1,15 @@
+Implementing Web Security in your ASP.NET Applications
+Javier Lozano
+-----------------------------------------------------------------
+https://github.com/lozanotek/aspnet-security
+The projects on that github all contain the examples he's giving in the session
+using Microsoft.AspNetCore.Identity;
+Has a lot of out of the box functionality but you have to comply with their setup
+
+This is how you manually authenticate with seperate providers if you don't want to use the out-of-the-box pages
+On implementing your own (I think that's where he's going)
+IdentityServer4 nuget package. Simple nuget package because it is just a middleware
+
+https://demo.identityserver.io/
+https://github.com/IdentityServer/IdentityServer4
+https://github.com/IdentityServer/IdentityServer4.Demo

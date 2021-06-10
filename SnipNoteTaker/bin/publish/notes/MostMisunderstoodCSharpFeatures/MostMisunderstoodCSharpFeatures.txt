@@ -1,0 +1,34 @@
+C# Misunderstandings
+
+Jerry Nixon
+@JerryNixon
+Microsoft Engineer
+A console application no longer needs a Program class
+You can now use async in Main()
+using static System.Console;
+Console.WriteLine("Hello world.");
+^ that's a whole valid file. For... whatever reason
+This is called "Static directives"
+C# is starting to implement very javascript style files
+Default literals
+You must use the question mark in order to mark as nullable for a nullable reference type
+when #nullable enable
+C# is headed in the direction that null reference exception is not hit in runtime
+#nullable disable
+^turns it off
+Targeted type expression
+Please, if you must do line 16, use named parameters:
+Null check built in
+Tuple matching:
+init keyword
+You can get it whenever, but you can only set it when initializing the item
+You can set it once, but never again
+So you can set it outside of the constructor as long as it has not already been assigned
+
+Automatic IComparable
+With keyword
+New way using yield:
+This allows for the individual records to be foreach'ed without loading them into memory simultaneously
+IAsyncEnumerable
+Concurrent parallel tasks
+https://aka.ms/2021_DEVINT_CS

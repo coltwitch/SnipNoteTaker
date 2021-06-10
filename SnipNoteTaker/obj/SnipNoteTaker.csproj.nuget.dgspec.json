@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Dev-SideProjects-Helpers-Fun\\SnipNoteTaker\\SnipNoteTaker\\SnipNoteTaker.csproj": {}
+  },
+  "projects": {
+    "C:\\Dev-SideProjects-Helpers-Fun\\SnipNoteTaker\\SnipNoteTaker\\SnipNoteTaker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev-SideProjects-Helpers-Fun\\SnipNoteTaker\\SnipNoteTaker\\SnipNoteTaker.csproj",
+        "projectName": "SnipNoteTaker",
+        "projectPath": "C:\\Dev-SideProjects-Helpers-Fun\\SnipNoteTaker\\SnipNoteTaker\\SnipNoteTaker.csproj",
+        "packagesPath": "C:\\Users\\colten.wendt\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev-SideProjects-Helpers-Fun\\SnipNoteTaker\\SnipNoteTaker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\colten.wendt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/academycorp/_packaging/Academy-Test/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SnapDb": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

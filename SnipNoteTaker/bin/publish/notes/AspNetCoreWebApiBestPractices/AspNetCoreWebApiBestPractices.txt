@@ -1,0 +1,169 @@
+Steve Smith - Ardalis.com | @Ardalis | seve@nimblepros.com
+ASP.NET Core Web API Best Practices
+-------------------------------------------------------------
+Web API Design
+ - using asp.net core and http
+
+Representational State Transfer (REST)
+An architectural style for building distributed systems based on hypermedia
+Open standards-based
+Technology-agnostic
+Client issues a request to a URI that represents a resource;
+ - request verb that indicates the operation to perform on the resource
+ - request body includes the data required for the operation
+REST-based APIs are stateless
+
+
+URI design considerations
+URI values should correspond to nouns
+ - /customers, /authors, /orders
+URI values should be plural
+
+
+Principle of Least Astonishment
+Simple and Consistend
+
+Don't expose business/data model
+Avoid coupling your web api directly to your data/domain model
+Use a standard UIR structure for subcollections
+Example:
+ Get /customers/1 will return customer1
+Get /customers/1/orders will return the orders of customer1
+
+
+With related collections, you have 3 options
+1) don't include subcollections in parent collection. Include only on seperate endpoint
+2) include array of ids of subcollection in parent call
+3) include full subcollection in parent call
+
+Avoid Deeply Nested URI Structures
+
+Hypermedia as the Engine of Application State
+Less commonly implemented aspect of REST approach
+Currently no widely used standard
+Basic idea: Each response includes links defining available requests on a given resource
+Example:
+GET /customers/
+Response includes customer data as well as links to URI for actions that can be taken on customer
+
+
+Comparison
+No hypermedia: Apps must know API intimately
+Hypermedia: API URIs may change but app continues working as long as rendered links resolve
+ - API behaves like a web page, providing links to functionality
+
+Standard verbs and behaviors
+GET   Fetch a resource - readonly
+PUT   Update a resource
+POST   Create a new resource
+DELETE   Delete a resource
+
+Safe and Idempotent API Requests
+Safe - read-only. Can be made without causing a change in resources
+Idempotent method can be called multiple times without changing the expected response
+Use Model Validation. [ApiController] attribute forces model validation inherently
+Inherit from ControllerBase and add [ApiController] attribute in controllers
+
+github.com/ardalis/ApiEndpoints
+One class per endpoint
+Leverages "fluent generics" pattern to configure base endpoint class
+^check that out if your controllers are getting too big
+
+200 OK request was successful
+201 OK - Post or Put was successful, body has latest representation
+204 OK - DELETE was successful
+400 - Bad Request
+401 - Unauthorized
+404 - Not found
+500 - Internal server error
+
+
+Prefer NotFound over NullReferenceException
+return NotFound();
+
+Avoid duplicating data within requests
+
+Use DTOs appropriately
+Avoid using domain objects or data entities as your API inputs/outputs
+Avoid creating DTO types that inadvertently reference non-DTO types
+
+Instead of including ID on DTOs relating to a backing model, introduce a new DTO over top of the backing model without the offending member
+You can use inheritance chains to prevent oversharing data on your endpoints
+
+Post-Redirect-Get (PRG) Pattern
+You should avoid using PRG when building APIs
+
+ActionResult<T> 
+ - return Ok();
+ - return NotFound()
+ - return BadRequest()
+
+Using ActionResult type allows for your client to negotiate the format that data is returned in
+ - ContentType can return xml, json, etc
+
+You should be using swagger
+https://github.com/RSuter/NSwag
+NSwag can a client library for a deployed swagger API
+Seems nice
+
+
+Kinds of Tests
+Unit Tests
+ - Not especially useful within API
+ - Backing libraries/services should be unit tested
+ - APIs should be shallow enough to not need unit tests
+
+Integration Tests
+ - Useful for APIs
+ - Several small integrated functionality tests 
+
+Function Tests
+ - Like a fully thorough integration test. End-to-end style tests
+
+Test APIs with TestServer
+Install Microsoft.AspNetCore.TestHost
+https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.2
+Configure with WebHostBuilder; use HttpClient to make requests to it
+See Example Web API Test slide
+Don't put magic strings in your test
+If you're using Seed Data, create a class that provides that so that you can edit it everywhere it's used in a single place
+
+
+Versioning Web APIs
+Easiest way to do it is to not version your APIs
+Completely valid, especially where you control the client as well as the server
+URI Versioning
+ - just add it to the route
+ - api.domain.com/v2/customers/1
+ - can be unwieldy if API changes often
+QueryString versioning
+ - api.domain.com/customers/1?ver=2
+Header versioning
+ - api.domain.com/customers/1   Version-Header: 2
+
+Avoid making breaking changes to your API as much as possible
+
+
+Securing Web APIs
+Use HTTPS 
+Windows Auth
+ - Simple, well-known
+ - works best within an intranet
+Identity Server
+ - an openId Connect and OAth 2.0 framework for asp.net core
+ - SSO, Separate Authentication Service, Access control for APIs
+ - IdentityServer 4
+ - Native/Mobile apps
+ - Free, Open Source, Part of .NET Foundation
+ - http://docs.identityserver.io/en/release/
+Web tokens/JWT works great
+jwt.io to inspect what is in a jwt token
+
+GraphQL?
+Provides a good ORM for apis
+
+
+
+http://aka.ms/WebAppArchitecture
+http://aspnetcorequickstart.com
+http://www.blinkingcaret.com/2017/09/06/secure-web-api-in-aps-net-core/

@@ -1,0 +1,101 @@
+Desing Strategy and ROI
+Billy Hollis
+"Agent Provocateur"
+Next Version Systems
+billy@nextver.com
+
+
+
+
+
+
+
+
+Design is an investment
+Most people in software industry has a fundamental misunderstanding and views design as a raw cost
+Design makes and saves money
+3 Major tangible measurable savings
+ - user productivity
+ - fewer errors
+ - less training
+Intangible benefits
+ - customer satisfaction
+ - employee satisfaction
+Advanced cases: "game changing" innovation
+
+How much money can we save?
+Excel document: http://bit.ly/UXROIEstimator
+^Excel document for calculating savings in corporate apps
+
+SaaS
+ - improved sales
+ - retention of customer
+ - improved support of the system
+
+The industry has a shortage of design expertise
+More commonly, this design isn't done because there is a disconnect between
+the way the team thinks and the way the decision makers think
+
+First level of disconnect: decision makers don't understand what designers do
+They think development is already too expensive.
+The last thing they want is to spend more money on it
+Common side effect: they discourage talking to users
+
+
+"Design" as a term is overloaded
+Getting past these obstacles
+ - Tangible returns helps convince many of them
+ - clarifying "what design is" will clear up many others
+
+Match level of design effort to importance of the application
+Level 1) Apply aesthetic design
+Level 2) Apply isolated standalone design (data visualization, process flow, etc)
+Level 3) Apply interaction design
+ - Navigation of application is a big deal here
+Level 4) Apply design thinking across entire workflows
+
+How to start - Gradual approach
+http://bit.ly/DesignProcV5
+^ downloads DesignProcessNotesV5.pdf
+Take an isolated piece and do a simple process
+
+OR
+
+Get some structured design training
+ - from interaction designer, not visual designer
+Jump immediately into a real design effort
+Have a design facilitator/lead
+Twin goals - get some good designs for projects and become familiar with design methods and principles for the future
+
+
+Typical steps in UX design
+Understanding
+ - business needs
+ - user observation
+ - analyzing user observations
+ - creating work models
+ - listing and prioritizing design tasks
+Design
+ - visioning
+ - storyboarding
+ - wireframing/illustration/paper mock-up
+ - interaction prototyping
+ - design evaluation
+
+Platform change
+Opportunity for total rethink of the application
+
+Design teams can involve many roles
+leader/facilitator
+project manager
+business analyst
+users or user proxies
+domain experts
+developers
+other stakeholders
+
+Resources: The role of creativity
+Out of our Minds: Learning to be Creative (Kenneth Robinson)
+The Creative Habit (Twyla Tharp)
+Curious: The Desire to Know and Why Your Future Depends On It (Ian Leslie)
+http://billyhollis.com/designbooks/

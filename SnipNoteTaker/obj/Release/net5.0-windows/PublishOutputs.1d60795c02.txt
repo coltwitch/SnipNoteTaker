@@ -1,0 +1,10 @@
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnipNoteTaker.exe
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnipNoteTaker.dll
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnipNoteTaker.deps.json
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnipNoteTaker.runtimeconfig.json
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnipNoteTaker.pdb
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\Newtonsoft.Json.dll
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\SnapDb.dll
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\System.Drawing.Common.dll
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Dev-SideProjects-Helpers-Fun\SnipNoteTaker\SnipNoteTaker\bin\Release\net5.0-windows\publish\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

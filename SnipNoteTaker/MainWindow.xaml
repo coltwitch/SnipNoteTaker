@@ -1,0 +1,23 @@
+﻿<Window x:Class="SnipNoteTaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnipNoteTaker"
+        mc:Ignorable="d"
+        Title="Snip Note Taker" Height="578" Width="418">
+  <Grid Margin="0,0,0,-16">
+    <TextBox x:Name="TextTextToAdd" KeyDown="OnKeyDownHandler" HorizontalAlignment="Left" Margin="10,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Height="105"/>
+    <Button x:Name="ButtonAddText" Content="Add Text" HorizontalAlignment="Left" Margin="307,111,0,0" VerticalAlignment="Top" Width="93" Click="ButtonAddText_Click"/>
+    <!--<TextBox x:Name="TextProjectName" HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Visibility="Hidden"/>-->
+    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,257,0,0" Width="382" Height="275">
+      <Image x:Name="ImageViewer"/>
+    </Border>
+    <Label x:Name="LabelProjectName" Content="Project Name" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top"/>
+    <Button x:Name="ButtonLoadStartProject" Content="Load/Start" HorizontalAlignment="Left" Margin="314,11,0,0" VerticalAlignment="Top" Width="86" Click="ButtonLoadStartProject_Click"/>
+    <Button x:Name="ButtonFileExplorer" Content="File Explorer" HorizontalAlignment="Left" Margin="307,136,0,0" VerticalAlignment="Top" Click="ButtonFileExplorer_Click" Width="93"/>
+    <Button x:Name="ButtonPaste" Content="Paste From Clipboard" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Height="56" Width="390" Click="ButtonPaste_Click"/>
+    <Button x:Name="ButtonOpenInPaint" Content="Open in Paint" HorizontalAlignment="Left" Margin="307,161,0,0" VerticalAlignment="Top" Width="93" Click="ButtonOpenInPaint_Click"/>
+    <ComboBox x:Name="ComboBoxProjectName" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="292" IsEditable="True"/>
+  </Grid>
+</Window>
