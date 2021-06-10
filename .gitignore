@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 *.vs
+*/PublishProfiles
 
 # Build results
 
@@ -97,6 +98,7 @@ ClientBin/
 *~
 *.dbmdl
 *.[Pp]ublish.xml
+*.pfx
 
 *.publishsettings
 
